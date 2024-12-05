@@ -64,7 +64,7 @@ header h1 {
     max-width: 600px;
     margin: 40px auto;
     padding: 40px;
-    height: 1000px;
+    height: 1000px auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for better visibility */
@@ -78,21 +78,21 @@ body.dark-mode .container {
 
 .container h2 {
     font-size: 28px;
-    margin-bottom: 10px;
     font-weight: 600;
 }
 
 
 .container h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    line-height: 30px;
     font-weight: 400;
     text-align: justify;
+    margin-bottom: 0px;
 }
 
 .container p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 300;
 }
 
@@ -227,7 +227,8 @@ footer {
     padding: 15px;
     text-align: center;
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 800px;
+    position: fixed;
 }
 
 footer a {
