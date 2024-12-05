@@ -63,8 +63,8 @@ app.post('/generate-quiz', (req, res) => {
       { "value": "5", "label": "5" },
       { "value": "6", "label": "6" }
     ],
-    "correct": "4"
-  }
+    "correct": "4",
+  },
     {
       id: 'q2',
       question: 'What is the capital of France?',
