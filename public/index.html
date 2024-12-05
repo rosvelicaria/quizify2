@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify - Upload Lesson Plans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1>Quizify</h1>
+    </header>
+
+    <div class="mode-toggle">
+        <button onclick="toggleMode()">🌙</button>
+    </div>
+
+    <div class="container">
+        <h2>Upload Your Lesson Plan</h2>
+        <p>Select a lesson plan file (txt, docx, pdf):</p>
+        <input type="file" id="lesson-plan" accept=".txt, .docx, .pdf">
+        <button onclick="uploadLesson()">Upload & Generate Quiz</button>
+
+        <div id="quiz-container" class="hidden">
+            <h3>Your Generated Quiz</h3>
+            <ul id="quiz-questions"></ul>
+            <button onclick="tryAgain()" id="try-again-btn" class="hidden">Try Again</button>
+        </div>
+    
+        <h3>Quizify is an intuitive web app designed to help educators streamline the quiz creation process by automatically
+             generating quiz questions from uploaded lesson plans. Teachers can easily upload lesson plan files in various formats
+            like .txt, .docx, or .pdf, and the app processes this content to create a set of multiple-choice questions.
+            This eliminates the need for educators to manually craft quizzes, saving time and effort while ensuring the quiz content
+            is relevant to the lesson material.
+
+            Once the quiz is generated, users can answer the multiple-choice questions, with each option accompanied by a radio button.
+            After completing the quiz, the app provides instant feedback by marking correct answers in green and incorrect answers with
+            a red strike-through. This immediate feedback helps learners understand their mistakes and reinforces the material. Users can
+            also track their scores and view their grade percentage, giving them a clear understanding of their performance.
+            
+            To enhance the learning experience, Quizify offers a "Try Again" feature that allows users to retake the quiz.
+            The questions are shuffled each time, ensuring a fresh challenge with each attempt. Additionally, the app supports light
+            and dark modes for a personalized interface. With these features, Quizify simplifies the quiz creation process and makes 
+            quizzes more engaging, helping educators and students alike.</h3>
+    
+    </div>
+ 
+
+    <footer>
+        <p>© 2024 Quizify. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
